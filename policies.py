@@ -33,7 +33,7 @@ class DQNPolicy:
     def apply_transform(self, s):
         return self.transform(s).unsqueeze(0)
 
-    def step(self, state, exploration_eps=None, debug=False):
+    def step(self, state, exploratiddon_eps=None, debug=False):
         # if exploration_eps is None:
         #     exploration_eps = self.cfg.final_exploration
         # state = self.apply_transform(state).to(self.device)

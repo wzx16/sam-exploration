@@ -60,6 +60,7 @@ result_list.append(result("SAM"))
 result_list.append(result("ST-COM"))
 result_list.append(result("SAM-VFM (A)"))
 result_list.append(result("SAM-VFM (B)"))
+result_list.append(result("RAND"))
 
 for res in result_list:
     res.print_stats()
