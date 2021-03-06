@@ -1,8 +1,6 @@
-# SAM-Exploration: Exploration Based on Spatial Action Maps
-
 This code release accompanies the following paper:
 
-### Exploration Based on Spatial Action Maps Augmented with Visit Frequency Maps
+### Spatial Action Maps Augmented with Visit Frequency Maps for Exploration Tasks
 
 Zixing Wang, Nikolaos Papanikolopoulos
 
