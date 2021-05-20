@@ -38,7 +38,7 @@ python enjoy.py --config-path logs/st-com-36000/config.yml
 
 ## Training in the Simulation Environment
 
-The [`config/experiments`](config/experiments) directory contains template config files for all experiments in the paper. To start a training run, you can give one of the template config files to the `train.py` script. For example, the following will train a spatial action map with visit frequency map and sigmoid penalty policy:
+The [`config`](config) directory contains template config files for all experiments in the paper. To start a training run, you can give one of the template config files to the `train.py` script. For example, the following will train a spatial action map with visit frequency map and sigmoid penalty policy:
 
 ```
 python train.py config/opt-vfm-sam.yml
