@@ -4,7 +4,7 @@ This code release accompanies the following paper:
 
 Zixing Wang, Nikolaos Papanikolopoulos
 
-*(In submission) IROS 2021, Prague, Czech*
+*IROS 2021, Prague, Czech*
 
 ## Installation
 
