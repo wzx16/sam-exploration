@@ -47,12 +47,22 @@ python train.py config/opt-vfm-sam.yml
 The training script will create a log directory and checkpoint directory for the new training run inside `logs/` and `checkpoints/`, respectively. Inside the log directory, it will also create a new config file called `config.yml`, which stores training run config variables and can be used to resume training or to load a trained policy for evaluation.
 
 ### Config Files
- 
-config/st-com.yml (steering commands),  
-config/sam.yml (spatial action map),  
-config/vfm-sam.yml (spatial action map with visit frequency map, SAM-VFM (B)).  
-config/opt-vfm-sam.yml (spatial action map with visit frequency map and sigmoid penalty, SAM-VFM (A)). 
-
+Steering Commands:
+``` 
+config/st-com.yml  
+```
+Spatial Action Maps:
+```
+config/sam.yml  
+```
+Spatial Action Map with Visit Frequency Map, SAM-VFM (B)
+```
+config/vfm-sam.yml  
+```
+Spatial Action Map with Visit Frequency Map and Sigmoid Penalty, SAM-VFM (A)
+```
+config/opt-vfm-sam.yml 
+```
 ### Simulation Environment
 
 To explore the simulation environment using our proposed dense action space (spatial action maps), you can use the `tools_click_agent.py` script, which will allow you to click on the local overhead map to select actions and move around in the environment.
