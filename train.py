@@ -182,7 +182,6 @@ def main(cfg):
 
             train_summary_writer.add_scalar('episodes', episode, timestep + 1)
             train_summary_writer.add_scalar('eta_hours', eta_seconds / 3600, timestep + 1)
-
             for name in ['cumulative_distance', 'cumulative_reward']:
                 train_summary_writer.add_scalar(name, info[name], timestep + 1)
 

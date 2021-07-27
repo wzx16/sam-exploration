@@ -33,18 +33,18 @@ class DQNPolicy:
     def apply_transform(self, s):
         return self.transform(s).unsqueeze(0)
 
-    def step(self, state, exploratiddon_eps=None, debug=False):
-        # if exploration_eps is None:
-        #     exploration_eps = self.cfg.final_exploration
-        # state = self.apply_transform(state).to(self.device)
-        # with torch.no_grad():
-        #     output = self.policy_net(state).squeeze(0)
-        # if random.random() < exploration_eps:
-        #     action = random.randrange(self.action_space)
-        # else:
-        #     action = output.view(1, -1).max(1)[1].item()
+    def step(self, state, exploration_eps=None, debug=False):
+        if exploration_eps is None:
+            exploration_eps = self.cfg.final_exploration
+        state = self.apply_transform(state).to(self.device)
+        with torch.no_grad():
+            output = self.policy_net(state).squeeze(0)
+        if random.random() < exploration_eps:
+            action = random.randrange(self.action_space)
+        else:
+            action = output.view(1, -1).max(1)[1].item()
+
         info = {}
-        action = random.randrange(self.action_space)
         if debug:
             info['output'] = output.squeeze(0)
         return action, info
