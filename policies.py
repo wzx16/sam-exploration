@@ -33,7 +33,11 @@ class DQNPolicy:
     def apply_transform(self, s):
         return self.transform(s).unsqueeze(0)
 
+<<<<<<< HEAD
     def step(self, state, exploration_eps=None, debug=False):
+=======
+    def step(self, state, exploratiddon_eps=None, debug=False):
+>>>>>>> 078afc2e9d65ca7f19ddf112b5639650bf24036e
         if exploration_eps is None:
             exploration_eps = self.cfg.final_exploration
         state = self.apply_transform(state).to(self.device)
@@ -43,7 +47,10 @@ class DQNPolicy:
             action = random.randrange(self.action_space)
         else:
             action = output.view(1, -1).max(1)[1].item()
+<<<<<<< HEAD
 
+=======
+>>>>>>> 078afc2e9d65ca7f19ddf112b5639650bf24036e
         info = {}
         if debug:
             info['output'] = output.squeeze(0)
