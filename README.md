@@ -47,19 +47,19 @@ python train.py config/opt-vfm-sam.yml
 The training script will create a log directory and checkpoint directory for the new training run inside `logs/` and `checkpoints/`, respectively. Inside the log directory, it will also create a new config file called `config.yml`, which stores training run config variables and can be used to resume training or to load a trained policy for evaluation.
 
 ### Config Files
-Steering Commands:
+Steering Commands, ST-COM:
 ``` 
 config/st-com.yml  
 ```
-Spatial Action Maps:
+Spatial Action Maps, SAM:
 ```
 config/sam.yml  
 ```
-Spatial Action Map with Visit Frequency Map, SAM-VFM (B)
+Spatial Action Map with Visit Frequency Map, SAM-VFM
 ```
 config/vfm-sam.yml  
 ```
-Spatial Action Map with Visit Frequency Map and Sigmoid Penalty, SAM-VFM (A)
+Spatial Action Map with Visit Frequency Map and Sigmoid Penalty, SAM-VFM-SIG
 ```
 config/opt-vfm-sam.yml 
 ```
